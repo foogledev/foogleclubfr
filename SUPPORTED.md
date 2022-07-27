@@ -10,6 +10,7 @@
 - Life Fruit Teleport
 - Rare Item Notifier
 - Merchant Teleport
+- Boss Teleports
 - Fruit Merchant Teleport
 - Safe Spot Teleport
 - Auto Pick Up (click detectors as of now)
@@ -24,3 +25,7 @@
 - Auto Shark Girl Quest (if quest isn't complete in server)
 - Auto Otsutsuki Box Quest (WIP)
 - Lagswitch 
+- Check for Sharingan / Byakugan Users
+- No Kill Bricks
+- Safe Respawn
+- Safe Return To Menu
