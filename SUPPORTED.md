@@ -18,4 +18,9 @@
 - Ingame Name ESP
 - Trinket ESP
 - Fullbright
+- Auto Ramen Quest
+- Auto Bandit Quest
+- Auto Innkeeper Quest
+- Auto Shark Girl Quest (if quest isn't complete in server)
+- Auto Otsutsuki Box Quest (WIP)
 - Lagswitch 
