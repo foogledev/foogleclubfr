@@ -1,4 +1,14 @@
--- Foogle Lib
+local UserInputService = game:GetService("UserInputService")
+local PerfPing = game:GetService 'Stats':WaitForChild 'PerformanceStats':WaitForChild 'Ping'
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local UserInputService = game:GetService('UserInputService')
+local TweenService = game:GetService('TweenService')
+local VIM = game:GetService('VirtualInputManager')
+local HttpService = game:GetService("HttpService")
+local RunService = game:GetService('RunService')
+local Lighting = game:GetService('Lighting')
+local Players = game:GetService('Players')
+local CoreGui = game:GetService("CoreGui")
 
 local Library = {
 	Toggle = true,
