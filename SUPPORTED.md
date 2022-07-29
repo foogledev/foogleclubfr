@@ -21,12 +21,12 @@
 - Player ESP
 - NPC ESP
 - Mob ESP
-- * Show Distance
-- * Show Chakra
-- * Show Health
-- * Show Ingame Name
-- * Show Clan (not to be confused with a player guild)
-- * Show Weapon
+ * Show Distance
+ * Show Chakra
+ * Show Health
+ * Show Ingame Name
+ * Show Clan (not to be confused with a player guild)
+ * Show Weapon
 - Fullbright
 - Random Safe Teleport
 - Unlock Every Chakra Point
@@ -35,8 +35,8 @@
 - Teleport to ANY NPC
 - Teleport to Player Name
 - Auto Quest
-- * Hostage Quest
-- * Innkeeper Quest
+ * Hostage Quest
+ * Innkeeper Quest
 - Boss Teleport
 - Merchant Teleport
 - Innkeeper Teleport
