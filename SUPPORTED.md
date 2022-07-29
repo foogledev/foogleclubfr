@@ -1,31 +1,44 @@
 # Supported Games
 
 ## Bloodlines
+- Flight
+- Noclip
+- Knocked Ownership
+- Follow Mouse Flight
+- No Fall Damage
+- Spider
 - Walkspeed Modification
 - Jumppower Modification
-- Flight
-- Unlock All Chakra Crystals (be cautious)
+- Lag Switch
+- Anti-Killbricks
 - Auto Fruit Summon
-- Life Fruit Notifier 
-- Life Fruit Teleport
-- Rare Item Notifier
-- Merchant Teleport
-- Boss Teleports
-- Fruit Merchant Teleport
-- Safe Spot Teleport
-- Auto Pick Up (click detectors as of now)
-- Auto Bandit Quest
+- Auto Pickup Ingredients
+- Auto Pickup Trinkets
+- Auto Pickup Map
+- Attach to back (supports mobs)
+- Attach Offset X and Y
+- Attach Orbit (Orbits around player)
 - Player ESP
-- Ingame Name ESP
-- Trinket ESP
+- NPC ESP
+- Mob ESP
+- * Show Distance
+- * Show Chakra
+- * Show Health
+- * Show Ingame Name
+- * Show Clan (not to be confused with a player guild)
+- * Show Weapon
 - Fullbright
-- Auto Ramen Quest
-- Auto Bandit Quest
-- Auto Innkeeper Quest
-- Auto Shark Girl Quest (if quest isn't complete in server)
-- Auto Otsutsuki Box Quest (WIP)
-- Lagswitch 
-- Check for Sharingan / Byakugan Users
-- No Kill Bricks
-- Safe Respawn
-- Safe Return To Menu
+- Random Safe Teleport
+- Unlock Every Chakra Point
+- Load in Life Fruits
+- Teleport to Loaded Life Fruit (if spawned)
+- Teleport to ANY NPC
+- Teleport to Player Name
+- Auto Quest
+- * Hostage Quest
+- * Innkeeper Quest
+- Boss Teleport
+- Merchant Teleport
+- Innkeeper Teleport
+- Return to Menu
+- Rejoin Game
