@@ -6,9 +6,11 @@
 - Knocked Ownership
 - Follow Mouse Flight
 - No Fall Damage
+- No Fire Burn
 - Spider
 - Walkspeed Modification
 - Jumppower Modification
+- Infinite Jump
 - Lag Switch
 - Anti-Killbricks
 - Auto Fruit Summon
@@ -34,6 +36,7 @@
 - Teleport to Loaded Life Fruit (if spawned)
 - Teleport to ANY NPC
 - Teleport to Player Name
+- Teleport to ANY CHAKRA POINT
 - Auto Quest
  * Hostage Quest
  * Innkeeper Quest
@@ -42,3 +45,9 @@
 - Innkeeper Teleport
 - Return to Menu
 - Rejoin Game
+- Hide Player Name
+- Life Fruit Notifier
+- Webhook Slot
+- Check for Dojutsu User
+- Serverhop (wip)
+- Save and Load Config
