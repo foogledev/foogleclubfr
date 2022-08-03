@@ -23,6 +23,7 @@
 - Player ESP
 - NPC ESP
 - Mob ESP
+- Trinket ESP
  * Show Distance
  * Show Chakra
  * Show Health
