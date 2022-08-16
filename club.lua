@@ -1,5 +1,13 @@
 repeat wait() until game:IsLoaded()
 
-if game.PlaceId == 10266164381 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/foogledev/foogleclubfr/main/bloodlines.lua"))()
+local Games = {
+    [10266164381] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/foogledev/foogleclubfr/main/games/bloodlines.lua"))() 
+    end;
+    [8304191830] = function()
+
+    end;
+}
+if Games[game.PlaceId] then
+    Games[game.PlaceId]() 
 end
