@@ -618,35 +618,38 @@ function Library:CreateWindow(Config)
 					end
 				end)
 
-				for _, OptionName in pairs(OptionTable) do
-					local Option = Folder.Option:Clone()
-					Option.Name = OptionName
-					Option.Parent = Dropdown.Container.Holder.Container
-
-					Option.Title.Text = OptionName
-					Option.BackgroundColor3 = Config.Color
-					Option.Size = UDim2.new(1, 0, 0, Option.Title.TextBounds.Y + 5)
-					Dropdown.Container.Holder.Size = UDim2.new(1, -5, 0,
-						Dropdown.Container.Holder.Container.ListLayout.AbsoluteContentSize.Y)
-					table.insert(Library.ColorTable, Option)
-
-					Option.MouseButton1Down:Connect(function()
-						Option.BackgroundTransparency = 0
-					end)
-
-					Option.MouseButton1Up:Connect(function()
-						Option.BackgroundTransparency = 1
-					end)
-
-					Option.MouseLeave:Connect(function()
-						Option.BackgroundTransparency = 1
-					end)
-
-					Option.MouseButton1Click:Connect(function()
-						Dropdown.Container.Value.Text = OptionName
-						Callback(OptionName)
-					end)
+				function DropdownInit:ReloadTable(Table)
+					for _, OptionName in pairs(Table) do
+						local Option = Folder.Option:Clone()
+						Option.Name = OptionName
+						Option.Parent = Dropdown.Container.Holder.Container
+	
+						Option.Title.Text = OptionName
+						Option.BackgroundColor3 = Config.Color
+						Option.Size = UDim2.new(1, 0, 0, Option.Title.TextBounds.Y + 5)
+						Dropdown.Container.Holder.Size = UDim2.new(1, -5, 0,
+							Dropdown.Container.Holder.Container.ListLayout.AbsoluteContentSize.Y)
+						table.insert(Library.ColorTable, Option)
+	
+						Option.MouseButton1Down:Connect(function()
+							Option.BackgroundTransparency = 0
+						end)
+	
+						Option.MouseButton1Up:Connect(function()
+							Option.BackgroundTransparency = 1
+						end)
+	
+						Option.MouseLeave:Connect(function()
+							Option.BackgroundTransparency = 1
+						end)
+	
+						Option.MouseButton1Click:Connect(function()
+							Dropdown.Container.Value.Text = OptionName
+							Callback(OptionName)
+						end)
+					end
 				end
+				DropdownInit:ReloadTable(OptionTable)
 				function DropdownInit:AddToolTip(Name)
 					if tostring(Name):gsub(" ", "") ~= "" then
 						Dropdown.MouseEnter:Connect(function()
@@ -692,12 +695,15 @@ function Library:CreateWindow(Config)
 							Option:Destroy()
 						end
 					end
-					Dropdown.Container.Holder.Size = UDim2.new(1, -5, 0,
-						Dropdown.Container.Holder.Container.ListLayout.AbsoluteContentSize.Y)
-					Dropdown.Size = UDim2.new(1, -10, 0,
-						Dropdown.Container.Holder.Container.ListLayout.AbsoluteContentSize.Y + Dropdown.Title.TextBounds.Y + 30)
+					Dropdown.Container.Holder.Size = UDim2.new(1, -5, 0,Dropdown.Container.Holder.Container.ListLayout.AbsoluteContentSize.Y)
+					Dropdown.Size = UDim2.new(1, -10, 0,Dropdown.Container.Holder.Container.ListLayout.AbsoluteContentSize.Y + Dropdown.Title.TextBounds.Y + 30)
+					Dropdown.Container.Value.Text = "..."
 				end
-
+				function DropdownInit:RefreshOptions(Table)
+					-- refreshes the current table
+					DropdownInit:ClearOptions()
+					DropdownInit:ReloadTable(Table)
+				end
 				if InitialValue then
 					DropdownInit:SetOption(InitialValue)
 				end
