@@ -1,6 +1,6 @@
 repeat wait() until game:IsLoaded()
 
-local Games = {
+getgenv().Games = {
     [10266164381] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/foogledev/foogleclubfr/main/games/bloodlines.lua"))() 
     end;
@@ -8,6 +8,6 @@ local Games = {
 
     end;
 }
-if Games[game.PlaceId] then
-    Games[game.PlaceId]() 
+if getgenv().Games[game.PlaceId] then
+    getgenv().Games[game.PlaceId]() 
 end
